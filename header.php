@@ -9,6 +9,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,14 +24,14 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
-    
+
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
-	
+
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
 
-        <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                            
+        <nav class="navbar navbar-dark site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+
 
                 <div class="container">
 
@@ -47,7 +48,7 @@
                                 </button>
 
                                 <!-- Your site title as branding in the menu -->
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/img/anka16.min.png" alt="<?php bloginfo( 'name' ); ?>"></a>
 
                             </div>
 
@@ -64,14 +65,8 @@
                             ); ?>
 
                 </div> <!-- .container -->
-                
-            
+
+
         </nav><!-- .site-navigation -->
-        
+
     </div><!-- .wrapper-navbar end -->
-
-
-
-
-
-

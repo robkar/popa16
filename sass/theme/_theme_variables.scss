@@ -1,5 +1,5 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
 // As example you find one of the most important Bootstrap variable below: $brand-primary.
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
@@ -8,6 +8,26 @@
 $brand-primary:         #895cd1; //#ff6d5a
 
 // Basics of a navbar
-$navbar-height:                    60px;
+$navbar-height:                    100px;
 $navbar-margin-bottom:             0px;
 $navbar-border-radius:             0px;
+$navbar-background:                #08f;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1366px
+) !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:     Avenir, "Open Sans", Helvetica, Arial, sans-serif;
+$headings-font-weight:       700;
